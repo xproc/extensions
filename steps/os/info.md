@@ -13,36 +13,16 @@ the processor is running. It returns a `c:result` element with attributes
 describing properties of the system. It _should_ include the following
 properties:
 
-* `file-separator`
-
-The file separator; usually “/” on Unix, “\” on Windows.
-
-* `path-separator`
-
-The path separator; usually “:” on Unix, “;” on Windows.
-
-* `os-architecture`
-
-The operating system architecture, for example “i386”.
-
-* `os-name`
-
-The name of the operating system, for example “Mac OS X”.
-
-* `os-version`
-
-The version of the operating system, for example “10.5.6”.
-
-* `cwd`
-
-The current working directory.
-
-* `user-name`
-
-The login name of the effective user, for example “ndw”.
-
-* `user-home`
-
-The home diretory of the effective user, for example “/home/ndw”.
+Attribute name     | Attribute value
+------------------ | ----------------------
+`file-separator`   | The file separator; usually “/” on Unix, “\” on Windows.
+`path-separator`   | The path separator; usually “:” on Unix, “;” on Windows.
+`os-architecture`  | The operating system architecture, for example “i386”.
+`os-name`          | The name of the operating system, for example “Mac OS X”.
+`os-version`       | The version of the operating system, for example “10.5.6”.
+`cwd`              | The current working directory.
+`user-name`        | The login name of the effective user, for example “ndw”.
+`user-home`        | The home diretory of the effective user, for example “/home/ndw”.
 
 The exact set of properties returned is implementation-dependent.
+
