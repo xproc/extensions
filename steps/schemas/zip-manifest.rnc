@@ -1,0 +1,18 @@
+default namespace c="http://www.w3.org/ns/xproc-step"
+
+start = zip-manifest
+
+zip-manifest =
+   element c:zip-manifest {
+      entry*
+   }
+
+entry =
+   element c:entry {
+      attribute name { text },
+      attribute href { text },
+      attribute comment { text }?,
+      attribute method { "deflated" | "stored" },
+      attribute level { "smallest" | "fastest" | "huffman" | "default" | "none" },
+      empty
+   }

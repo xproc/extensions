@@ -1,0 +1,36 @@
+default namespace t = "http://xproc.org/ns/testsuite"
+namespace p = "http://www.w3.org/ns/xproc"
+namespace c = "http://www.w3.org/ns/xproc-step"
+
+start = Data | ZipFile
+
+Data =
+   element c:data {
+      attribute name { text },
+      attribute content-type { text },
+      text
+   }
+
+ZipFile =
+   element c:zipfile {
+      attribute href { xsd:anyURI },
+      (File|Directory)*
+   }
+
+File =
+   element c:file {
+      attribute name { text },
+      attribute size { xsd:integer }?,
+      attribute compressed-size { xsd:integer }?,
+      attribute date { xsd:dateTime }?,
+      attribute comment { text }?,
+      empty
+   }
+
+Directory =
+   element c:directory {
+      attribute name { text },
+      attribute date { xsd:dateTime }?,
+      attribute comment { text }?,
+      empty
+   }
