@@ -1,4 +1,4 @@
-# Proposed Steps
+# Proposed steps
 
 This directory and its subdirectories collect proposed extension
 steps.

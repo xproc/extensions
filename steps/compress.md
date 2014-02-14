@@ -34,9 +34,8 @@ The `compression-method` option can be used to identify the compression method
 used. Suggested values are “`bzip2`”, “`compress`”, “`gzip`”, etc. If
 unspecified, the default method is _implementation defined_.
 
-# Note
-
-Would it be better to specify a default? Perhaps `gzip`?
+> Note
+> Would it be better to specify a default? Perhaps `gzip`?
 
 It is a _dynamic error_ if the method is unrecognized.
 
