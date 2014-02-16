@@ -23,6 +23,7 @@ Attribute name     | Attribute value
 `cwd`              | The current working directory.
 `user-name`        | The login name of the effective user, for example “ndw”.
 `user-home`        | The home diretory of the effective user, for example “/home/ndw”.
+`temp-dir`         | The operating system temporary directory, for example “file:/tmp/”
 
 The exact set of properties returned is implementation-dependent.
 
