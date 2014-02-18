@@ -15,10 +15,10 @@ From the [XPath 1.0 specification](http://www.w3.org/TR/xpath/#section-Processin
 
 After loading a document, there is no way to determine whether or not it contained an XML declaration (or what values that XML declaration contained). Also, some times it is useful to read the XML declaration without loading the entire file (for instance for validation purposes). The signature of this step is similar to that of `p:load`, but instead of loading the file, it reads the XML declaration of that file.
 
-The `result` output port will contain a `c:xml` document. If there is no XML declaration, then the result document will not contain any attributes. If an XML declaration is found, the attributes in the XML declaration will be provided as attributes on the resulting `c:xml` document:
+The `result` output port will contain a `c:result` document. If there is no XML declaration, then the result document will not contain any attributes. If an XML declaration is found, the attributes in the XML declaration will be provided as attributes on the resulting `c:result` document:
 
 ```xml
-<c:xml
+<c:result
   version? = string
   encoding? = string
   standalone? = string />
