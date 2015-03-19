@@ -12,6 +12,7 @@ The p:xsl-formatter step receives an XML or HTML document and renders the conten
   <p:option name="href" required="true" as="xs:anyURI"/>
   <p:option name="content-type" as="xs:string"/>
 </p:declare-step>
+````
 
 The value of the `href` option must be an `anyURI`. If it is relative, it is made absolute against the base URI of the element on which it is specified (p:with-option or p:css-formatter in the case of a syntactic shortcut value).
 
